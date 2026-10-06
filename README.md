@@ -4,20 +4,20 @@
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-- 📄 **Local Resume Parsing:** In-memory PDF text extraction using PyMuPDF (`fitz`).
-- 🤖 **Local AI Inference:** Powered by Ollama and `qwen3:4b` with zero cloud API keys, zero cost, and 100% data privacy.
-- 📐 **Deterministic Skill Taxonomy:** Aliases and hierarchical normalization (`FastAPI` matches `REST APIs`, `PostgreSQL` matches `SQL`).
-- 🎯 **Explainable Gap & Readiness Engine:** Transparent readiness formula ($70\%$ required, $30\%$ preferred weighting) and priority ranking.
-- 🔄 **Adaptive Remediation Loop:** Immediately targets candidate mistakes and subtopic weaknesses.
-- 📊 **Mathematical Score Updates:** Formula-driven skill score progression: $\text{new\_score} = \text{round}(0.70 \times \text{prev} + 0.30 \times \text{ans})$.
-- 💾 **SQLite Persistence:** Session and attempt history survive application restarts.
-- ⚡ **Modern React Dashboard:** Built with React 19, Vite, and Tailwind CSS.
+-  **Local Resume Parsing:** In-memory PDF text extraction using PyMuPDF (`fitz`).
+-  **Local AI Inference:** Powered by Ollama and `qwen3:4b` with zero cloud API keys, zero cost, and 100% data privacy.
+-  **Deterministic Skill Taxonomy:** Aliases and hierarchical normalization (`FastAPI` matches `REST APIs`, `PostgreSQL` matches `SQL`).
+-  **Explainable Gap & Readiness Engine:** Transparent readiness formula ($70\%$ required, $30\%$ preferred weighting) and priority ranking.
+-  **Adaptive Remediation Loop:** Immediately targets candidate mistakes and subtopic weaknesses.
+-  **Mathematical Score Updates:** Formula-driven skill score progression: $\text{new\_score} = \text{round}(0.70 \times \text{prev} + 0.30 \times \text{ans})$.
+-  **SQLite Persistence:** Session and attempt history survive application restarts.
+-  **Modern React Dashboard:** Built with React 19, Vite, and Tailwind CSS.
 
 ---
 
-## 🏛️ Architecture & Separation of Concerns
+##  Architecture & Separation of Concerns
 
 ```text
 Resume PDF + Job Description
@@ -46,7 +46,7 @@ Deterministic Skill State Update (0.7*prev + 0.3*ans)
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 - **Frontend:** React, Vite, Tailwind CSS, Lucide React
 - **Backend:** Python 3.12, FastAPI, Pydantic v2, PyMuPDF, SQLite
@@ -54,7 +54,7 @@ Deterministic Skill State Update (0.7*prev + 0.3*ans)
 
 ---
 
-## 🛠️ Local Setup & Quickstart
+##  Local Setup & Quickstart
 
 ### Prerequisites
 - Windows 11 (or Linux/macOS)
@@ -104,7 +104,7 @@ Frontend will be running at `http://localhost:5173`.
 
 ---
 
-## 🧪 Running Automated Tests
+##  Running Automated Tests
 
 Run the complete test suite across health checks, resume parser, skill taxonomy, gap analyzer, adaptive planner, evaluator, and database CRUD:
 ```powershell
@@ -114,7 +114,7 @@ pytest backend/tests/test_health.py backend/tests/test_resume_parser.py backend/
 
 ---
 
-## 📖 API Reference
+##  API Reference
 
 - `POST /api/analyze`: Multi-part upload (PDF resume + target role + job description). Returns extracted profile, skill gaps, readiness score, and initial adaptive recommendation.
 - `GET /api/candidate/{id}`: Returns candidate profile and current skill state.
@@ -125,7 +125,7 @@ pytest backend/tests/test_health.py backend/tests/test_resume_parser.py backend/
 
 ---
 
-## 📚 Documentation Links
+##  Documentation Links
 - [Solution Brief](docs/solution-brief.md)
 - [System Architecture](docs/architecture.md)
 - [Model Evaluation & Comparison](docs/model-comparison.md)
